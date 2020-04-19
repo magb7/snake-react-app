@@ -6,6 +6,7 @@ header {
   box-shadow: 0 2px 10px 3px black;
   width: 100vw;
   height: 20vh;
+  margin-bottom: 20px;
 }
 
 .snake-icon {

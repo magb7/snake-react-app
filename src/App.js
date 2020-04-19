@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <div className="back-img">
         <Header />
-        {/* <Game /> */}
+        <Game />
       </div>
     );
   }
