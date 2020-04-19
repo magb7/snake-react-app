@@ -1,0 +1,9 @@
+.snake-dot {
+  position: absolute;
+  width: 2%;
+  height: 2%;
+  background-color: #6fa71c;
+  border: 1px solid #bce979;
+  box-shadow: 1px 2px 4px black;
+  z-index: 2;
+}

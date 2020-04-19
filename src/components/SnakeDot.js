@@ -1,4 +1,5 @@
 import React from "react";
+import "./SnakeDot.css";
 
 const SnakeDot = (props) => {
   return (
@@ -15,4 +16,3 @@ const SnakeDot = (props) => {
 };
 
 export default SnakeDot;
-
