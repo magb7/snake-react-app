@@ -69,8 +69,6 @@ class Game extends Component {
   moveSnake = () => {
     let dots = [...this.state.snakeDots]; // récupère les coordonnées sur snake
     let head = dots[dots.length - 1]; // récupère la tête du snake qui sont les dernières coordonnées du snake
-    //dots = [[0, 0], [2, 0]];
-    //head = dots[dots.length - 1 ] = [2,0];
 
     // check la direction avec un switch
 
