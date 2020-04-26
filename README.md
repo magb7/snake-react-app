@@ -14,11 +14,11 @@ The game was based on those two tutorials made by [Chigabiga](https://www.youtub
 
 ## Features in development/ improvements
 
-  - [] Footer 
-  - [] Add a 'Start' button 
-  - [] Add music 
-  - [] Switched from class to hooks 
-  - [x] Improve loading time by reducing background size
+  - [ ] Footer 
+  - [ ] Add a 'Start' button 
+  - [ ] Add music 
+  - [ ] Switched from class to hooks 
+  - [x] Improve loading time by reducing background size
 
 
   
