@@ -1,0 +1,28 @@
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  height: 100px;
+  background: -webkit-linear-gradient(
+    bottom,
+    rgba(121, 142, 108, 1) 0%,
+    rgba(44, 66, 53, 1) 85%,
+    rgba(44, 66, 53, 1) 100%
+  );
+}
+
+p {
+  justify-self: start;
+  color: #6fa71c;
+  font-size: 0.8rem;
+  font-family: "Press Start 2P", cursive;
+  text-shadow: 2px 2px 5px black;
+}
+
+img {
+  margin-right: 25px;
+  width: 30px;
+  height: 30px;
+}
