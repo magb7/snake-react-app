@@ -35,7 +35,7 @@ class Game extends Component {
 
   // Méthode pour le mouvement du snake
   componentDidMount() {
-    // setInterval(this.moveSnake, this.state.speed);
+    setInterval(this.moveSnake, this.state.speed);
     document.onkeydown = this.onKeyDown;
   }
   //Méthode pour vérifier si le snake a été mis à jour
