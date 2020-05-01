@@ -6,13 +6,13 @@ The game was based on those two tutorials made by [Chigabiga](https://www.youtub
   - First video : [here](https://www.youtube.com/watch?v=-oOgsGP3t5o)
   - Second video : [here](https://www.youtube.com/watch?v=lgK7OTdT-eo)
   
-## Time spent
+# Time spent
 
   - The basics of the game were developed in one day (~ 7 hours).
   - The web site around the game : ~ 4 hours so far
 
 
-## Features in development/ improvements
+# Features in development/ improvements
 
   - [x] Footer 
   - [ ] Add a 'Start' button 
@@ -22,6 +22,6 @@ The game was based on those two tutorials made by [Chigabiga](https://www.youtub
 
 
   
-## Production (on Netlify)
+# Production (on Netlify)
 
 You can play [here](https://nervous-leakey-752015.netlify.app)
