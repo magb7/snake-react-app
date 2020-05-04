@@ -17,7 +17,7 @@ The game was based on those two tutorials made by [Chigabiga](https://www.youtub
   - [x] Footer 
   - [ ] Add a 'Start' button 
   - [ ] Add music 
-  - [ ] Switched from class to hooks and change onkeydown property since .keyCode is deprecated
+  - [ ] Change onkeydown property since .keyCode is deprecated
   - [x] Improve loading time by reducing background size
 
 
