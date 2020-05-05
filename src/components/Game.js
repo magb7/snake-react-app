@@ -51,7 +51,7 @@ class Game extends Component {
     const direction = e.code.replace("Arrow", "").toUpperCase();
     switch (direction) {
       case "UP":
-        this.setState({ direction: "UP" }); // modif de la src d'un img + décalage d'une case.
+        this.setState({ direction: "UP" });
         break;
       case "DOWN":
         this.setState({ direction: "DOWN" });
