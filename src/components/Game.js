@@ -47,17 +47,19 @@ class Game extends Component {
 
   // Méthode pour donner des directions en fonction de la touche appuyée
   onKeyDown = (e) => {
-    switch (e.keyCode) {
-      case 38:
+    e.preventDefault();
+    const direction = e.code.replace("Arrow", "").toUpperCase();
+    switch (direction) {
+      case "UP":
         this.setState({ direction: "UP" }); // modif de la src d'un img + décalage d'une case.
         break;
-      case 40:
+      case "DOWN":
         this.setState({ direction: "DOWN" });
         break;
-      case 37:
+      case "LEFT":
         this.setState({ direction: "LEFT" });
         break;
-      case 39:
+      case "RIGHT":
         this.setState({ direction: "RIGHT" });
         break;
       default:
