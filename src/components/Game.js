@@ -51,7 +51,7 @@ class Game extends Component {
     const direction = e.code.replace("Arrow", "").toUpperCase();
     switch (direction) {
       case "UP":
-        this.setState({ direction: "UP" }); // modif de la src d'un img + décalage d'une case.
+        this.setState({ direction: "UP" });
         break;
       case "DOWN":
         this.setState({ direction: "DOWN" });
@@ -165,7 +165,7 @@ class Game extends Component {
       <div className="game-area">
         <SnakeDot snakeDot={this.state.snakeDots} />
         <Food foodDot={this.state.food} />
-        <h3>Score: {this.state.score}</h3>
+        <h3 className="score">Score: {this.state.score}</h3>
       </div>
     );
   }

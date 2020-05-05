@@ -1,0 +1,39 @@
+.home {
+  align-self: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+  width: 600px;
+  height: 450px;
+}
+
+.home img {
+  width: 180px;
+  height: 120px;
+}
+
+.start {
+  padding: 30px 30px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  letter-spacing: 4px;
+  color: black;
+  font-family: "Press Start 2P", cursive;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-shadow: 3px 2px #6fa71c;
+  background-color: #798e6c;
+  box-shadow: 0 2px 10px 3px black;
+  cursor: pointer;
+}
+
+.start:hover {
+  color: #6fa71c;
+  text-shadow: 3px 2px black;
+}
+.start:focus {
+  box-shadow: inset 0px 0px 34px 15px rgba(58, 77, 46, 1);
+}

@@ -8,11 +8,7 @@
   background-color: rgba(44, 66, 53, 0.5);
 }
 
-h3 {
+.score {
   position: absolute;
-  /* top: -30px; */
   bottom: -30px;
-  color: #6fa71c;
-  font-family: "Press Start 2P", cursive;
-  text-shadow: 3px 2px black;
 }

@@ -7,3 +7,9 @@
   background-size: cover;
   background-position: center;
 }
+
+h3 {
+  color: #6fa71c;
+  font-family: "Press Start 2P", cursive;
+  text-shadow: 3px 2px black;
+}
