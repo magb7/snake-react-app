@@ -1,7 +1,10 @@
 import React, { Component } from "react";
-import SnakeDot from "./SnakeDot";
-import Food from "./Food";
 import "./Game.css";
+
+// Components
+import ControlsTab from "./ControlsTab";
+import Food from "./Food";
+import SnakeDot from "./SnakeDot";
 
 // méthode qui permet de donner des coordonnées aléatoires à food
 const getRandomCoordinates = () => {
@@ -22,6 +25,7 @@ const initialeState = {
     [0, 0],
     [2, 0],
   ],
+  canMusic: true,
 };
 
 class Game extends Component {
@@ -35,7 +39,7 @@ class Game extends Component {
 
   // Méthode pour le mouvement du snake
   componentDidMount() {
-    setInterval(this.moveSnake, this.state.speed);
+    // setInterval(this.moveSnake, this.state.speed);
     document.onkeydown = this.onKeyDown;
   }
   //Méthode pour vérifier si le snake a été mis à jour
@@ -160,12 +164,18 @@ class Game extends Component {
     this.setState(initialeState);
   }
 
+  // Méthode pour la music
+  toggleMusic = () => {
+    this.setState({ canMusic: !this.state.canMusic });
+  };
+
   render() {
     return (
       <div className="game-area">
         <SnakeDot snakeDot={this.state.snakeDots} />
         <Food foodDot={this.state.food} />
         <h3 className="score">Score: {this.state.score}</h3>
+        <ControlsTab toggleMusic={this.toggleMusic} />
       </div>
     );
   }
