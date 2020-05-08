@@ -35,5 +35,7 @@
   text-shadow: 3px 2px black;
 }
 .start:focus {
+  color: #6fa71c;
+  text-shadow: 3px 2px black;
   box-shadow: inset 0px 0px 34px 15px rgba(58, 77, 46, 1);
 }
