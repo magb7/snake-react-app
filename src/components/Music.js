@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./Music.css";
 import { Icon } from "@iconify/react";
 
 // Components
