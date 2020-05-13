@@ -24,4 +24,4 @@ The game was based on those two tutorials made by [Chigabiga](https://www.youtub
 
 ## Production (on Netlify)
 
-You can play [here](https://nervous-leakey-752015.netlify.app)
+You can play [here](https://snake-react-game.netlify.app/)
