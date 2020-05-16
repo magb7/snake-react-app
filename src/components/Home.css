@@ -1,15 +1,18 @@
 .home {
   align-self: center;
+}
+
+.desktop {
   justify-content: space-around;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 30px;
-  width: 600px;
-  height: 450px;
+  width: 50vw;
+  height: 60vh;
 }
 
-.home img {
+.desktop img {
   width: 180px;
   height: 120px;
 }
@@ -38,4 +41,34 @@
   color: #6fa71c;
   text-shadow: 3px 2px black;
   box-shadow: inset 0px 0px 34px 15px rgba(58, 77, 46, 1);
+}
+
+.responsive {
+  align-items: center;
+  display: none;
+  flex-direction: row;
+  text-align: center;
+  margin: 30px;
+  width: 70vw;
+  height: 60vh;
+}
+
+.resp-text {
+  font-size: 1.7rem;
+  line-height: 3rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .desktop {
+    display: none;
+  }
+  .responsive {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .resp-text {
+    font-size: 1.5rem;
+  }
 }
