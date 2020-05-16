@@ -22,3 +22,33 @@ h1 {
   font-family: "Press Start 2P", cursive;
   text-shadow: 2px 2px 5px black;
 }
+
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 35px;
+  }
+  .snake-icon {
+    width: 150px;
+    height: 75px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    height: 15vh;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+  .snake-icon {
+    width: 100px;
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  h1 {
+    line-height: 2.5rem;
+  }
+}
