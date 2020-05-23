@@ -10,8 +10,9 @@ The game was based on those two tutorials made by [Chigabiga](https://www.youtub
 ## Time spent
 
 - The basics of the game were developed in one day (~ 7 hours).
-- The web site around the game : ~ 12 hours so far
+- The website around the game : ~ 9 hours
 - Wireframe : 2 and half hours
+- Redesign the website : 4 hours so far
 
 ## Features in development/ improvements
 
@@ -19,8 +20,8 @@ The game was based on those two tutorials made by [Chigabiga](https://www.youtub
 - [x] Add a 'Start' button
 - [x] Add music
 - [x] Change onkeydown property since .keyCode is deprecated
-- [x] Improve loading time by reducing background size
 - [ ] Add "game over" pop up
+- [ ] Redesign website (in progress)
 
 ## Production (on Netlify)
 
