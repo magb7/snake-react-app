@@ -3,14 +3,7 @@
   flex-flow: column wrap;
   width: 100vw;
   height: 100vh;
-  background-image: url("/images/background2.jpg");
+  background-image: url("/images/jungle_leafs.png");
   background-size: cover;
   background-position: center;
-}
-
-h3 {
-  color: #6fa71c;
-  font-family: "Press Start 2P", cursive;
-  text-shadow: 3px 2px black;
-  line-height: 2rem;
 }
