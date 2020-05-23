@@ -11,14 +11,14 @@ const Footer = () => {
           rel="noopener noreferrer"
           target="_blank"
         >
-          <img src="/images/GitHub.png" alt="GitHub logo" />
+          <img src="/images/GitHub_light.png" alt="GitHub logo" />
         </a>
         <a
           href="https://www.linkedin.com/in/margaux-b%C3%A9du/"
           rel="noopener noreferrer"
           target="_blank"
         >
-          <img src="/images/Linkedin.png" alt="LinkedIn logo" />
+          <img src="/images/Linkedin_light.png" alt="LinkedIn logo" />
         </a>
       </div>
     </footer>
