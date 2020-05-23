@@ -5,4 +5,8 @@ export default styled.h3`
   text-shadow: 3px 2px black;
   line-height: 2rem;
   letter-spacing: 0.1rem;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 1.5rem;
+  }
 `;
