@@ -1,23 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Home.css";
 
 // Components
 import H3 from "./H3";
+import Button from "./Button";
+import HomeDesktop from "./HomeDesktop";
+import HomeResponsive from "./HomeResponsive";
 
 const Home = () => {
   return (
-    <div className="home">
-      <div className="desktop">
+    <div>
+      <HomeDesktop>
         <H3>Use the keyboard arrows to play</H3>
-        <img src="/images/keyboardArrows.png" alt="keyboard arrows" />
+        <img src="/images/Arrows_light.png" alt="keyboard arrows" />
         <Link to="/Game">
-          <button className="start">Press to start</button>
+          <Button start>Press to start</Button>
         </Link>
-      </div>
-      <div className="responsive">
-        <H3 className="resp-text">The game is available on computer only</H3>
-      </div>
+      </HomeDesktop>
+      <HomeResponsive>
+        <H3>The game is available on computer only</H3>
+      </HomeResponsive>
     </div>
   );
 };
