@@ -10,7 +10,8 @@ The game was based on those two tutorials made by [Chigabiga](https://www.youtub
 ## Time spent
 
 - The basics of the game were developed in one day (~ 7 hours).
-- The web site around the game : ~ 9 hours so far
+- The web site around the game : ~ 12 hours so far
+- Wireframe : 2 and half hours
 
 ## Features in development/ improvements
 
