@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 // Components
-import H3 from "./H3";
-import Button from "./Button";
-import HomeDesktop from "./HomeDesktop";
-import HomeResponsive from "./HomeResponsive";
+import H3 from "./styled/H3";
+import Button from "./styled/Button";
+import HomeDesktop from "./styled/HomeDesktop";
+import HomeResponsive from "./styled/HomeResponsive";
 
 const Home = () => {
   return (

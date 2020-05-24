@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import "./Header.css";
 
 // Components
-import H1 from "./H1";
-import ToggleWrapper from "./ToggleWrapper";
-import ToggleBall from "./ToggleBall";
+import H1 from "./styled/H1";
+import ToggleWrapper from "./styled/ToggleWrapper";
+import ToggleBall from "./styled/ToggleBall";
 
 const Header = () => {
   const [dark, setDark] = useState(false);
