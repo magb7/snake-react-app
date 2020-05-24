@@ -8,7 +8,7 @@ export default styled.button`
   border-radius: 20px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
     inset 3px 4px 4px rgba(206, 244, 205, 0.6);
-  padding: ${(props) => (props.start ? "30px 30px" : "10px 10px")};
+  padding: ${(props) => (props.start ? "30px 30px" : "15px 12px")};
   border: none;
   outline: none;
   text-transform: ${(props) => (props.start ? "uppercase" : "none")};
