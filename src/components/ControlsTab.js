@@ -1,18 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./ControlsTab.css";
 
-// Component
+// Components
 import Music from "./Music";
+import Button from "./styled/Button";
+import ControlsWrapper from "./styled/ControlsWrapper";
 
 const ControlsTab = ({ toggleMusic }) => {
   return (
-    <div className="controls-wrapper">
+    <ControlsWrapper>
       <Music toggleMusic={toggleMusic} />
       <Link to="/">
-        <button>Back to Home</button>
+        <Button>Back to Home</Button>
       </Link>
-    </div>
+    </ControlsWrapper>
   );
 };
 
