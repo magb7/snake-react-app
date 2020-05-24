@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import Game from "./components/Game";
 import Header from "./components/Header";
 import Home from "./components/Home";
-import Main from "./components/Main";
+import Main from "./components/styled/Main";
 
 const App = () => {
   return (
