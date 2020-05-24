@@ -8,7 +8,6 @@ export default styled.div`
   margin: 30px;
   width: 60vw;
   height: 60vh;
-  border: 1px solid blue;
   text-align: center;
 
   img {
