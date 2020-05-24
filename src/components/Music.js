@@ -20,6 +20,7 @@ const Music = ({ toggleMusic }) => {
             : "/images/MusicPlay_light.png"
         }
         style={{ width: "40px", height: "40px", cursor: "pointer" }}
+        alt="Music Icon"
       />
       <audio
         autoPlay
