@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export default styled.div`
-  align-self: center;
   position: relative;
   margin: 30px;
   width: 600px;
