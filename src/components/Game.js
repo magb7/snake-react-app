@@ -4,8 +4,8 @@ import React, { Component } from "react";
 import ControlsTab from "./ControlsTab";
 import Food from "./Food";
 import SnakeDot from "./SnakeDot";
-import H3 from "./H3";
-import GameArea from "./GameArea";
+import H3 from "./styled/H3";
+import GameArea from "./styled/GameArea";
 
 // méthode qui permet de donner des coordonnées aléatoires à food
 const getRandomCoordinates = () => {
@@ -40,7 +40,7 @@ class Game extends Component {
 
   // Méthode pour le mouvement du snake
   componentDidMount() {
-    // setInterval(this.moveSnake, this.state.speed);
+    setInterval(this.moveSnake, this.state.speed);
     document.onkeydown = this.onKeyDown;
   }
   //Méthode pour vérifier si le snake a été mis à jour
