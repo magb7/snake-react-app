@@ -18,7 +18,7 @@ export default styled.button`
     background-color: rgba(9, 169, 3, 0.8);
   }
 
-  &:focus {
+  &:active {
     box-shadow: inset 3px 4px 4px rgba(0, 0, 0, 0.5);
   }
 `;
