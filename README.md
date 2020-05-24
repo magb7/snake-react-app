@@ -12,7 +12,7 @@ The game was based on those two tutorials made by [Chigabiga](https://www.youtub
 - The basics of the game were developed in one day (~ 7 hours).
 - The website around the game : ~ 9 hours
 - Wireframe : 2 and half hours
-- Redesign the website : 4 hours so far
+- Redesign the website : 5 and half hours so far
 
 ## Features in development/ improvements
 
