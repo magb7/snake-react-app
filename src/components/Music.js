@@ -1,9 +1,4 @@
 import React, { useState } from "react";
-import { Icon } from "@iconify/react";
-
-// Components
-import roundMusicNote from "@iconify/icons-ic/round-music-note";
-import roundMusicOff from "@iconify/icons-ic/round-music-off";
 
 const Music = ({ toggleMusic }) => {
   const [musicIcon, setMusicIcon] = useState(false);
@@ -14,20 +9,20 @@ const Music = ({ toggleMusic }) => {
   };
 
   return (
-    <div className="music-wrapper">
-      <Icon
+    <div>
+      <img
         onClick={() => {
           handleMusic();
         }}
-        icon={musicIcon ? roundMusicOff : roundMusicNote}
-        style={{
-          color: "#6fa71c",
-          fontSize: "40px",
-          cursor: "pointer",
-        }}
+        src={
+          musicIcon
+            ? "/images/MusicMute_light.png"
+            : "/images/MusicPlay_light.png"
+        }
+        style={{ width: "40px", height: "40px", cursor: "pointer" }}
+        alt="Music Icon"
       />
       <audio
-        className="audio"
         autoPlay
         muted={musicIcon}
         loop

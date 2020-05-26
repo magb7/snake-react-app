@@ -3,23 +3,19 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 0 10vw;
   width: 100vw;
   height: 15vh;
-  background: -webkit-linear-gradient(
-    bottom,
-    rgba(121, 142, 108, 1) 0%,
-    rgba(44, 66, 53, 1) 85%,
-    rgba(44, 66, 53, 1) 100%
-  );
+  position: sticky;
+  bottom: 0;
+  left: 0;
 }
 
 p {
-  justify-self: start;
-  color: #6fa71c;
+  color: #09a903;
+  text-shadow: 2px 2px black;
   font-size: 0.8rem;
-  font-family: "Press Start 2P", cursive;
-  text-shadow: 2px 2px 5px black;
+  letter-spacing: 0.1rem;
 }
 
 img {
@@ -32,5 +28,8 @@ img {
   footer {
     flex-direction: column;
     padding: 1.5rem;
+  }
+  p {
+    margin-bottom: 10px;
   }
 }
