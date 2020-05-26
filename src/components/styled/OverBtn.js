@@ -7,7 +7,6 @@ export default styled.button`
   background-color: rgba(9, 169, 3, 0.5);
   box-shadow: 2px 3px 4px rgba(9, 169, 3, 0.5),
     inset 3px 4px 4px rgba(206, 244, 205, 0.5);
-
   border-radius: 20px;
   font-size: 12px;
   letter-spacing: 0.1rem;
@@ -15,6 +14,7 @@ export default styled.button`
   border: none;
   outline: none;
   cursor: pointer;
+  grid-area: ${(props) => (props.home ? "home" : "btn")};
 
   &:hover {
     background-color: #09a903;
