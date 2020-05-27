@@ -7,8 +7,8 @@ export default styled.div`
   position: absolute;
   width: 100vw;
   height: 100vh;
-  top: 0;
-  left: 0;
+  top: -137px;
+  left: -420px;
   background-color: rgba(9, 169, 3, 0.4);
   z-index: 2;
 `;
