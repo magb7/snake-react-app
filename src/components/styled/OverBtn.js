@@ -14,7 +14,7 @@ export default styled.button`
   border: none;
   outline: none;
   cursor: pointer;
-  grid-area: ${(props) => (props.home ? "home" : "btn")};
+  grid-area: btn;
 
   &:hover {
     background-color: #09a903;
