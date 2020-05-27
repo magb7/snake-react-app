@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // Components
 import ModalBkgd from "./styled/ModalBkgd";
@@ -7,17 +8,21 @@ import OverBtn from "./styled/OverBtn";
 import OverText from "./styled/OverText";
 import OverImg from "./styled/OverImg";
 
-const Modal = () => {
+const Modal = ({ showModal, resetGame }) => {
   return (
-    <ModalBkgd>
-      <OverMenu>
-        <OverText game>Game</OverText>
-        <OverImg src="/images/Snake_img.png" />
-        <OverText>Over</OverText>
-        <OverBtn>Try Again</OverBtn>
-        <OverBtn home>Back to Home</OverBtn>
-      </OverMenu>
-    </ModalBkgd>
+    showModal && (
+      <ModalBkgd>
+        <OverMenu>
+          <OverText game>Game</OverText>
+          <OverImg src="/images/Snake_img.png" />
+          <OverText>Over</OverText>
+          <OverBtn onClick={resetGame}>Try Again</OverBtn>
+          <Link style={{ gridArea: "home" }} to="/">
+            <OverBtn home>Back to Home</OverBtn>
+          </Link>
+        </OverMenu>
+      </ModalBkgd>
+    )
   );
 };
 
