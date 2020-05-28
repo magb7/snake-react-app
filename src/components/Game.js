@@ -6,6 +6,7 @@ import Food from "./Food";
 import SnakeDot from "./SnakeDot";
 import H3 from "./styled/H3";
 import GameArea from "./styled/GameArea";
+import Modal from "./Modal";
 
 // méthode qui permet de donner des coordonnées aléatoires à food
 const getRandomCoordinates = () => {
@@ -27,6 +28,7 @@ const initialeState = {
     [2, 0],
   ],
   canMusic: true,
+  openModal: false,
 };
 
 class Game extends Component {
@@ -161,8 +163,15 @@ class Game extends Component {
 
   //Méthode game over
   onGameOver() {
-    alert(`Game Over !`);
-    this.setState(initialeState);
+    this.setState({
+      openModal: true,
+      speed: 0,
+      snakeDots: [
+        [0, 0],
+        [2, 0],
+      ],
+      canMusic: false,
+    });
   }
 
   // Méthode pour la music
@@ -170,14 +179,25 @@ class Game extends Component {
     this.setState({ canMusic: !this.state.canMusic });
   };
 
+  // Reset Game
+  resetGame = () => {
+    this.setState(initialeState);
+  };
+
   render() {
     return (
-      <GameArea>
-        <SnakeDot snakeDot={this.state.snakeDots} />
-        <Food foodDot={this.state.food} />
-        <H3 score>Score: {this.state.score}</H3>
-        <ControlsTab toggleMusic={this.toggleMusic} />
-      </GameArea>
+      <div>
+        <GameArea>
+          <SnakeDot snakeDot={this.state.snakeDots} />
+          <Food foodDot={this.state.food} />
+          <H3 score>Score: {this.state.score}</H3>
+          <ControlsTab toggleMusic={this.toggleMusic} />
+        </GameArea>
+        <Modal
+          showModal={this.state.openModal}
+          resetGame={this.resetGame}
+        ></Modal>
+      </div>
     );
   }
 }

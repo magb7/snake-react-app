@@ -13,7 +13,7 @@ The game was based on those two tutorials made by [Chigabiga](https://www.youtub
 - The basics of the game were developed in one day (~ 7 hours).
 - The website around the game : ~ 9 hours
 - Wireframe : 2 and half hours
-- Redesign the website : 6 and half hours so far
+- Redesign the website : 7 hours
 
 ## Features in development/ improvements
 
@@ -21,7 +21,7 @@ The game was based on those two tutorials made by [Chigabiga](https://www.youtub
 - [x] Add a 'Start' button
 - [x] Add music
 - [x] Change onkeydown property since .keyCode is deprecated
-- [ ] Add "game over" pop up
+- [x] Add "game over" pop up
 - [x] Redesign website
 - [ ] Implement dark mode with Redux
 
