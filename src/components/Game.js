@@ -186,16 +186,18 @@ class Game extends Component {
 
   render() {
     return (
-      <GameArea>
-        <SnakeDot snakeDot={this.state.snakeDots} />
-        <Food foodDot={this.state.food} />
-        <H3 score>Score: {this.state.score}</H3>
-        <ControlsTab toggleMusic={this.toggleMusic} />
+      <div>
+        <GameArea>
+          <SnakeDot snakeDot={this.state.snakeDots} />
+          <Food foodDot={this.state.food} />
+          <H3 score>Score: {this.state.score}</H3>
+          <ControlsTab toggleMusic={this.toggleMusic} />
+        </GameArea>
         <Modal
           showModal={this.state.openModal}
           resetGame={this.resetGame}
         ></Modal>
-      </GameArea>
+      </div>
     );
   }
 }
