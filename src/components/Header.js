@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { TOGGLE_DARKTHEME } from "../actions";
-import HeaderStyled from "./styled/HeaderStyled";
 
 // Components
 import H1 from "./styled/H1";
 import ToggleWrapper from "./styled/ToggleWrapper";
 import ToggleBall from "./styled/ToggleBall";
+import HeaderWrapper from "./styled/HeaderWrapper";
 
 const Header = () => {
   const darkThemeEnabled = useSelector(
@@ -26,7 +26,7 @@ const Header = () => {
   };
 
   return (
-    <HeaderStyled>
+    <HeaderWrapper>
       <Link to="/">
         <H1>Snake Game</H1>
       </Link>
@@ -38,7 +38,7 @@ const Header = () => {
       >
         <ToggleBall dark={darkThemeEnabled} />
       </ToggleWrapper>
-    </HeaderStyled>
+    </HeaderWrapper>
   );
 };
 
