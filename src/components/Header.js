@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import { TOGGLE_DARKTHEME } from "../actions";
 import "./Header.css";
 
 // Components
@@ -8,9 +10,19 @@ import ToggleWrapper from "./styled/ToggleWrapper";
 import ToggleBall from "./styled/ToggleBall";
 
 const Header = () => {
+  const darkThemeEnabled = useSelector(
+    (state) => state.preferences.darkThemeEnabled
+  );
+  const dispatch = useDispatch();
+
   const [dark, setDark] = useState(false);
-  const ToggleTheme = () => {
-    setDark(!dark);
+
+  const toggleTheme = () => {
+    if (dark === darkThemeEnabled) {
+      setDark(false);
+    } else {
+      setDark(darkThemeEnabled);
+    }
   };
 
   return (
@@ -18,8 +30,13 @@ const Header = () => {
       <Link to="/">
         <H1>Snake Game</H1>
       </Link>
-      <ToggleWrapper onClick={() => ToggleTheme()}>
-        <ToggleBall dark={dark} />
+      <ToggleWrapper
+        onClick={() => {
+          toggleTheme();
+          dispatch({ type: TOGGLE_DARKTHEME });
+        }}
+      >
+        <ToggleBall dark={darkThemeEnabled} />
       </ToggleWrapper>
     </header>
   );
