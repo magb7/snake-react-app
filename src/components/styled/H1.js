@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export default styled.h1`
-  color: #09a903;
+  color: ${(props) => props.theme.color.textColor};
   text-shadow: ${(props) => props.theme.color.textShadow};
   font-size: 45px;
   line-height: 2rem;
