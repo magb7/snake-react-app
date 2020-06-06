@@ -9,4 +9,5 @@ export default styled.div`
   border: 3px solid #09a903;
   border-radius: 5px;
   box-shadow: ${(props) => props.theme.color.gameShadow};
+  transition: ease-in-out 0.5s all;
 `;
