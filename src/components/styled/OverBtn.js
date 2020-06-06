@@ -21,7 +21,6 @@ export default styled.button`
   }
 
   &:active {
-    box-shadow: 2px 3px 4px rgba(9, 169, 3, 0.5),
-      inset 3px 4px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 3px 4px 4px rgba(0, 0, 0, 0.5);
   }
 `;
