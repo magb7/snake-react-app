@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export default styled.h3`
-  color: #09a903;
   text-shadow: ${(props) => props.theme.color.textShadow};
   transition: ease-in-out 0.5s all;
   line-height: 3rem;
