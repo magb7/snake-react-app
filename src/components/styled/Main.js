@@ -8,7 +8,7 @@ export default styled.main`
   align-items: center;
   width: 100vw;
   min-height: 100vh;
-  background-color: white;
+  background-color: ${(props) => props.theme.color.background};
   background-image: url("/images/jungle_leafs.png");
   background-size: cover;
   background-position: center;
@@ -16,4 +16,5 @@ export default styled.main`
   border: 2px solid rgba(9, 169, 3, 0.7);
   position: relative;
   z-index: 1;
+  transition: ease-in-out 0.5s all;
 `;
