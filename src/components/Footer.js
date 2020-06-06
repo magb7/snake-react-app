@@ -1,9 +1,10 @@
 import React from "react";
-import "./Footer.css";
+// Components
+import FooterWrapper from "./styled/FooterWrapper";
 
 const Footer = () => {
   return (
-    <footer>
+    <FooterWrapper>
       <p>Made by Margaux Bédu</p>
       <div className="logos">
         <a
@@ -21,7 +22,7 @@ const Footer = () => {
           <img src="/images/Linkedin_light.png" alt="LinkedIn logo" />
         </a>
       </div>
-    </footer>
+    </FooterWrapper>
   );
 };
 

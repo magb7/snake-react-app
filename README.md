@@ -14,6 +14,7 @@ The game was based on those two tutorials made by [Chigabiga](https://www.youtub
 - The website around the game : ~ 9 hours
 - Wireframe : 2 and half hours
 - Redesign the website : 7 hours
+- Dark mode : 4 hours
 
 ## Features in development/ improvements
 
@@ -23,7 +24,7 @@ The game was based on those two tutorials made by [Chigabiga](https://www.youtub
 - [x] Change onkeydown property since .keyCode is deprecated
 - [x] Add "game over" pop up
 - [x] Redesign website
-- [ ] Implement dark mode with Redux
+- [x] Implement dark mode with Redux
 
 ## Production (on Netlify)
 
