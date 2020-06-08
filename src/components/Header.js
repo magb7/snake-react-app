@@ -1,29 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
-import { TOGGLE_DARKTHEME } from "../actions";
-
+import { useDispatch, connect } from "react-redux";
 // Components
 import H1 from "./styled/H1";
 import ToggleWrapper from "./styled/ToggleWrapper";
 import ToggleBall from "./styled/ToggleBall";
 import HeaderWrapper from "./styled/HeaderWrapper";
 
-const Header = () => {
-  const darkThemeEnabled = useSelector(
-    (state) => state.preferences.darkThemeEnabled
-  );
+const mapStateToProps = (state) => ({
+  theme: state,
+});
+
+const Header = ({ theme }) => {
   const dispatch = useDispatch();
-
-  const [dark, setDark] = useState(false);
-
-  const toggleTheme = () => {
-    if (dark === darkThemeEnabled) {
-      setDark(false);
-    } else {
-      setDark(darkThemeEnabled);
-    }
-  };
 
   return (
     <HeaderWrapper>
@@ -32,14 +21,13 @@ const Header = () => {
       </Link>
       <ToggleWrapper
         onClick={() => {
-          toggleTheme();
-          dispatch({ type: TOGGLE_DARKTHEME });
+          dispatch({ type: "TOGGLE_DARKTHEME" });
         }}
       >
-        <ToggleBall dark={darkThemeEnabled} />
+        <ToggleBall dark={theme} />
       </ToggleWrapper>
     </HeaderWrapper>
   );
 };
 
-export default Header;
+export default connect(mapStateToProps)(Header);

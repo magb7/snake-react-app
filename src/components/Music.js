@@ -1,6 +1,11 @@
 import React, { useState } from "react";
+import { connect } from "react-redux";
 
-const Music = ({ toggleMusic }) => {
+const mapStateToProps = (state) => ({
+  theme: state,
+});
+
+const Music = ({ toggleMusic, theme }) => {
   const [musicIcon, setMusicIcon] = useState(false);
 
   const handleMusic = () => {
@@ -16,8 +21,8 @@ const Music = ({ toggleMusic }) => {
         }}
         src={
           musicIcon
-            ? "/images/MusicMute_light.png"
-            : "/images/MusicPlay_light.png"
+            ? `/images/${theme}/MusicMute.png`
+            : `/images/${theme}/MusicPlay.png`
         }
         style={{ width: "40px", height: "40px", cursor: "pointer" }}
         alt="Music Icon"
@@ -32,4 +37,4 @@ const Music = ({ toggleMusic }) => {
   );
 };
 
-export default Music;
+export default connect(mapStateToProps)(Music);
