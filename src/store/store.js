@@ -1,5 +1,5 @@
 import { createStore } from "redux";
-import rootReducer from "./reducers";
+import rootReducer from "../reducer/reducer";
 
 const localStorageKey = "theme";
 const persistedTheme = localStorage.getItem(localStorageKey);
@@ -8,7 +8,11 @@ let initialState = {
   preferences: persistedTheme ? JSON.parse(persistedTheme) : {},
 };
 
-const store = createStore(rootReducer, initialState);
+const store = createStore(
+  rootReducer,
+  initialState,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
 
 store.subscribe(() => {
   const preferences = store.getState().preferences;
