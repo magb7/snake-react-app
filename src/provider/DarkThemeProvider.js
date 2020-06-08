@@ -1,19 +1,20 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { connect } from "react-redux";
 import { ThemeProvider } from "styled-components";
 // Themes
 import lightTheme from "../theme/light";
 import darkTheme from "../theme/dark";
 
-const DarkThemeProvider = ({ children }) => {
-  const darkThemeEnabled = useSelector(
-    (state) => state.preferences.darkThemeEnabled
-  );
+const mapStateToProps = (state) => ({
+  theme: state,
+});
+
+const DarkThemeProvider = ({ children, theme }) => {
   return (
-    <ThemeProvider theme={darkThemeEnabled ? darkTheme : lightTheme}>
+    <ThemeProvider theme={theme === "dark" ? darkTheme : lightTheme}>
       {children}
     </ThemeProvider>
   );
 };
 
-export default DarkThemeProvider;
+export default connect(mapStateToProps)(DarkThemeProvider);
