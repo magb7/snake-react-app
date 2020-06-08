@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useDispatch, connect } from "react-redux";
-
 // Components
 import H1 from "./styled/H1";
 import ToggleWrapper from "./styled/ToggleWrapper";
@@ -30,4 +29,5 @@ const Header = ({ theme }) => {
     </HeaderWrapper>
   );
 };
+
 export default connect(mapStateToProps)(Header);
