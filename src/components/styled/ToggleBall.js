@@ -5,6 +5,7 @@ export default styled.div`
   height: 20px;
   background: ${(props) => props.theme.color.background};
   border-radius: 50px;
-  transform: ${(props) => (props.dark ? "translate(32px) " : "translate(0%)")};
+  transform: ${(props) =>
+    props.dark === "dark" ? "translate(32px) " : "translate(0%)"};
   transition: ease-in-out 0.5s all;
 `;
