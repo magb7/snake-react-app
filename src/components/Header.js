@@ -15,16 +15,6 @@ const Header = () => {
   );
   const dispatch = useDispatch();
 
-  const [dark, setDark] = useState(false);
-
-  const toggleTheme = () => {
-    if (dark === darkThemeEnabled) {
-      setDark(false);
-    } else {
-      setDark(darkThemeEnabled);
-    }
-  };
-
   return (
     <HeaderWrapper>
       <Link to="/">
@@ -32,7 +22,6 @@ const Header = () => {
       </Link>
       <ToggleWrapper
         onClick={() => {
-          toggleTheme();
           dispatch({ type: TOGGLE_DARKTHEME });
         }}
       >
