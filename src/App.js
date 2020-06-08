@@ -8,7 +8,7 @@ import Game from "./components/Game";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Main from "./components/styled/Main";
-import DarkThemeProvider from "./components/DarkThemeProvider";
+import DarkThemeProvider from "./provider/DarkThemeProvider";
 // Store
 import store from "./store";
 
