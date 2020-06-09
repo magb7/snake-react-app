@@ -1,13 +1,10 @@
 import React from "react";
-import { connect } from "react-redux";
+import { useSelector } from "react-redux";
 // Components
 import FooterWrapper from "./styled/FooterWrapper";
 
-const mapStateToProps = (state) => ({
-  theme: state,
-});
-
-const Footer = ({ theme }) => {
+const Footer = () => {
+  const theme = useSelector((state) => state);
   return (
     <FooterWrapper>
       <p>Made by Margaux Bédu</p>
@@ -31,4 +28,4 @@ const Footer = ({ theme }) => {
   );
 };
 
-export default connect(mapStateToProps)(Footer);
+export default Footer;
