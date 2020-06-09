@@ -1,18 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useDispatch, connect } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 // Components
 import H1 from "./styled/H1";
 import ToggleWrapper from "./styled/ToggleWrapper";
 import ToggleBall from "./styled/ToggleBall";
 import HeaderWrapper from "./styled/HeaderWrapper";
 
-const mapStateToProps = (state) => ({
-  theme: state,
-});
-
-const Header = ({ theme }) => {
+const Header = () => {
   const dispatch = useDispatch();
+  const theme = useSelector((state) => state);
 
   return (
     <HeaderWrapper>
@@ -30,4 +27,4 @@ const Header = ({ theme }) => {
   );
 };
 
-export default connect(mapStateToProps)(Header);
+export default Header;

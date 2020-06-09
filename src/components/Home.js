@@ -1,17 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { connect } from "react-redux";
+import { useSelector } from "react-redux";
 // Components
 import H3 from "./styled/H3";
 import Button from "./styled/Button";
 import HomeDesktop from "./styled/HomeDesktop";
 import HomeResponsive from "./styled/HomeResponsive";
 
-const mapStateToProps = (state) => ({
-  theme: state,
-});
-
-const Home = ({ theme }) => {
+const Home = () => {
+  const theme = useSelector((state) => state);
   return (
     <div>
       <HomeDesktop>
@@ -28,4 +25,4 @@ const Home = ({ theme }) => {
   );
 };
 
-export default connect(mapStateToProps)(Home);
+export default Home;
