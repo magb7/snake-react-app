@@ -1,12 +1,9 @@
 import React, { useState } from "react";
-import { connect } from "react-redux";
+import { useSelector } from "react-redux";
 
-const mapStateToProps = (state) => ({
-  theme: state,
-});
-
-const Music = ({ toggleMusic, theme }) => {
+const Music = ({ toggleMusic }) => {
   const [musicIcon, setMusicIcon] = useState(false);
+  const theme = useSelector((state) => state);
 
   const handleMusic = () => {
     toggleMusic();
@@ -37,4 +34,4 @@ const Music = ({ toggleMusic, theme }) => {
   );
 };
 
-export default connect(mapStateToProps)(Music);
+export default Music;
